@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shain.emotionapi">
+    //EmotionAPI
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //Camera
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -9,13 +14,52 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="메뉴 화면"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Log 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ReadActivity"
+            android:label="Log 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".RecordActivity"
+            android:label="Log 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VoiceActivity"
+            android:label="Log 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LogActivity"
+            android:label="Log 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ResultActivity"
+            android:label="결과 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ResultActivity2"
+            android:label="녹음결과 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".photoview"
+            android:label="결과 화면"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Photoview_voice"
+            android:label="결과 화면"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
